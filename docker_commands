@@ -1,0 +1,44 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+
+docker build -t techtrends:techtrends .
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+
+docker run -d -p 7111:3111 techtrends:techtrends
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+
+docker logs --tail 1000 -f a7
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+
+> Executing task: docker logs --tail 1000 -f a735788c0d118f7c9db20979f863d3754bfceb6a5a0cc21b7fed3d12722d873d <
+
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug:[2021-09-14 04:58:17,873] -  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:[2021-09-14 04:58:39,767] - 172.17.0.1 - - [14/Sep/2021 04:58:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[2021-09-14 04:58:40,290] - 172.17.0.1 - - [14/Sep/2021 04:58:40] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:[2021-09-14 04:58:41,860] - 172.17.0.1 - - [14/Sep/2021 04:58:41] "GET /favicon.ico HTTP/1.1" 404 -
+source /home/udacity/project/env/bin/activate
+INFO:app:[2021-09-14 05:03:09,392] - Article "2020 CNCF Annual Report" Retrieved
+INFO:werkzeug:[2021-09-14 05:03:09,397] - 172.17.0.1 - - [14/Sep/2021 05:03:09] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:[2021-09-14 05:03:11,871] - 172.17.0.1 - - [14/Sep/2021 05:03:11] "GET / HTTP/1.1" 200 -
+INFO:app:[2021-09-14 05:03:15,551] - About Us page retrieved!
+INFO:werkzeug:[2021-09-14 05:03:15,554] - 172.17.0.1 - - [14/Sep/2021 05:03:15] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:[2021-09-14 05:03:16,984] - 172.17.0.1 - - [14/Sep/2021 05:03:16] "GET /create HTTP/1.1" 200 -
+INFO:app:[2021-09-14 05:03:26,517] - New article created: Hi
+INFO:werkzeug:[2021-09-14 05:03:26,519] - 172.17.0.1 - - [14/Sep/2021 05:03:26] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:[2021-09-14 05:03:26,911] - 172.17.0.1 - - [14/Sep/2021 05:03:26] "GET / HTTP/1.1" 200 -
+INFO:app:[2021-09-14 05:03:32,832] - Article "Hi" Retrieved
+INFO:werkzeug:[2021-09-14 05:03:32,833] - 172.17.0.1 - - [14/Sep/2021 05:03:32] "GET /7 HTTP/1.1" 200 -
+
+
+
