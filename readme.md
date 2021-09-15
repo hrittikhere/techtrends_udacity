@@ -1,1 +1,1 @@
-## TechTrends Udacity Project
+## TechTrends Udacity Project ⭐
