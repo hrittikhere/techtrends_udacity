@@ -42,3 +42,8 @@ INFO:werkzeug:[2021-09-14 05:03:32,833] - 172.17.0.1 - - [14/Sep/2021 05:03:32] 
 
 
 
+# tag the image
+docker tag go-helloworld hrittik/go-helloworld:v1.0.0
+
+# push the image
+docker push hrittik/go-helloworld:v1.0.0
